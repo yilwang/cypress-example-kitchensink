@@ -11,7 +11,7 @@ context('My Fifth Test', () => {
   it('can click on different section on canvas', () => {
     cy.get('#action-canvas').click('top')
     cy.get('#action-canvas').click('bottomRight')
-    cy.get('#action-canvas').click(80,100)
+    cy.get('#action-canvas').click(80, 100)
   })
 
   it('can double click to edit', () => {
@@ -28,5 +28,4 @@ context('My Fifth Test', () => {
     cy.get('.dropdown-toggle').trigger('mouseover')
     cy.get('.dropdown-menu').should('be.visible')
   })
-
 })

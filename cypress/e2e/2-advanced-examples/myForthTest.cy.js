@@ -10,7 +10,6 @@ context('My Forth Test', () => {
     cy.log('after each hook is here.')
   })
 
-
   after(() => {
     cy.log('the after hook runs once.')
   })
