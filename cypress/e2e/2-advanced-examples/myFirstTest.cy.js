@@ -4,8 +4,8 @@ const navbarText = Cypress.env('navbarText')
 
 context('My First Test', () => {
   beforeEach(() => {
-    //cy.visit('/')
-    cy.visit('http://example.cypress.io/commands/actions')
+    cy.visit('/')
+    //cy.visit('http://example.cypress.io/commands/actions')
   })
 
   // it('has an h1 on the page', () => {
