@@ -4,7 +4,7 @@ const navbarText = Cypress.env('navbarText')
 
 context('My First Test', () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit('http://localhost:8080/commands/actions')
     //cy.visit('http://example.cypress.io/commands/actions')
   })
 
@@ -32,7 +32,7 @@ context('My First Test', () => {
   // })
 
   it('correctly renders the cypress website link', () => {
-    cy.findByText('cypress.io').should('exist')
+    //cy.findByText('cypress.io').should('exist')
     cy.findByText(navbarText).should('exist')
   })
 })
